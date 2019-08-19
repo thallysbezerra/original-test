@@ -1,0 +1,266 @@
+[
+	{
+		"color": [
+			{
+				"colorName": "Light Brown",
+				"hexColor": "#a14830"
+			},
+			{
+				"colorName": "Black",
+				"hexColor": "#000"
+			}
+		],
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"id": "prod01",
+		"img": [
+			{
+				"imgUrl": "https://i.imgur.com/2KWJLrJ.jpg",
+				"thumbnail": "https://i.imgur.com/l4F71y8.jpg"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%202",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%202"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%203",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%203"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%204",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%204"
+			}
+		],
+		"model": "CT 0568",
+		"price": {
+			"original": 249.9,
+			"promotional": 204.9,
+			"installmentType": [
+				{
+					"installments": 1,
+					"installmentsValue": 204.9
+				},
+				{
+					"installments": 2,
+					"installmentsValue": 102.45
+				},
+				{
+					"installments": 3,
+					"installmentsValue": 69.3
+				},
+				{
+					"installments": 4,
+					"installmentsValue": 51.23
+				},
+				{
+					"installments": 5,
+					"installmentsValue": 40.98
+				},
+				{
+					"installments": 6,
+					"installmentsValue": 34.15
+				}
+			]
+		},
+		"size": ["Tamanho único"],
+		"ref": "02.04.0452",
+		"title": "Carteira com botão",
+		"video": "https://www.youtube.com/embed/-UtCmE6jzqo"
+	},
+	{
+		"color": [
+			{
+				"colorName": "Fucsia",
+				"hexColor": "#debf75"
+			},
+			{
+				"colorName": "Blue Sky",
+				"hexColor": "#6b85c1"
+			},
+			{
+				"colorName": "Light Brown",
+				"hexColor": "#a14830"
+			},
+			{
+				"colorName": "Black",
+				"hexColor": "#000"
+			}
+		],
+		"description": "Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.",
+		"id": "prod02",
+		"img": [
+			{
+				"imgUrl": "https://i.imgur.com/9kpoJil.jpg",
+				"thumbnail": "https://i.imgur.com/hJ7nkd3.jpg"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%202",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%202"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%203",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%203"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%204",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%204"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%205",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%205"
+			}
+		],
+		"model": "RT 0568",
+		"price": {
+			"original": 69,
+			"promotional": 55.2,
+			"installmentType": [
+				{
+					"installments": 1,
+					"installmentsValue": 55.2
+				},
+				{
+					"installments": 2,
+					"installmentsValue": 27.6
+				},
+				{
+					"installments": 3,
+					"installmentsValue": 18.4
+				},
+				{
+					"installments": 4,
+					"installmentsValue": 13.8
+				},
+				{
+					"installments": 5,
+					"installmentsValue": 11.04
+				},
+				{
+					"installments": 6,
+					"installmentsValue": 9.2
+				}
+			]
+		},
+		"size": ["33", "34", "35", "36", "37", "38", "39", "40", "41", "42"],
+		"ref": "03.07.0653",
+		"title": "Rasteira Tira Dedo",
+		"video": "https://www.youtube.com/embed/jgWbIUlUC2k"
+	},
+	{
+		"color": [
+			{
+				"colorName": "Light Brown",
+				"hexColor": "#a14830"
+			}
+		],
+		"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		"id": "prod03",
+		"img": [
+			{
+				"imgUrl": "https://i.imgur.com/bUwsBh9.jpg",
+				"thumbnail": "https://i.imgur.com/ffZjJSc.jpg"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%202",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%202"
+			}
+		],
+		"model": "BO 0568",
+		"price": {
+			"original": 429.9,
+			"promotional": 369,
+			"installmentType": [
+				{
+					"installments": 1,
+					"installmentsValue": 369
+				},
+				{
+					"installments": 2,
+					"installmentsValue": 184.5
+				},
+				{
+					"installments": 3,
+					"installmentsValue": 123
+				},
+				{
+					"installments": 4,
+					"installmentsValue": 92.25
+				},
+				{
+					"installments": 5,
+					"installmentsValue": 73.8
+				},
+				{
+					"installments": 6,
+					"installmentsValue": 61.5
+				}
+			]
+		},
+		"size": ["Tamanho único"],
+		"ref": "13.05.7853",
+		"title": "Bolsa com alça",
+		"video": "https://www.youtube.com/embed/B0Tq9gxlr5g"
+	},
+	{
+		"color": [
+			{
+				"colorName": "Light Brown",
+				"hexColor": "#a14830"
+			},
+			{
+				"colorName": "Black",
+				"hexColor": "#000"
+			}
+		],
+		"description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+		"id": "prod04",
+		"img": [
+			{
+				"imgUrl": "https://i.imgur.com/tppfam7.jpg",
+				"thumbnail": "https://i.imgur.com/LLyEPCu.jpg"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%202",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%202"
+			},
+			{
+				"imgUrl": "https://fakeimg.pl/430x556/?text=Img%203",
+				"thumbnail": "https://fakeimg.pl/290x375/?text=Img%203"
+			}
+		],
+		"model": "RT 0569",
+		"price": {
+			"original": 138,
+			"promotional": 110.4,
+			"installmentType": [
+				{
+					"installments": 1,
+					"installmentsValue": 110.4
+				},
+				{
+					"installments": 2,
+					"installmentsValue": 55.2
+				},
+				{
+					"installments": 3,
+					"installmentsValue": 36.8
+				},
+				{
+					"installments": 4,
+					"installmentsValue": 27.6
+				},
+				{
+					"installments": 5,
+					"installmentsValue": 22.08
+				},
+				{
+					"installments": 6,
+					"installmentsValue": 18.4
+				}
+			]
+		},
+		"size": ["33", "34", "35", "36", "37", "38", "39", "40", "41", "42"],
+		"ref": "73.17.0689",
+		"title": "Rasteira Reveillon",
+		"video": "https://www.youtube.com/embed/6xMNmd4Y2_s"
+	}
+]
