@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart UI <Cart /> must have the snapshot version. 1`] = `
+<div
+  className="cart"
+>
+  <i
+    className="cart__icon fas fa-shopping-bag"
+  />
+  <span
+    className="car__items-quantity"
+  >
+    0
+  </span>
+</div>
+`;

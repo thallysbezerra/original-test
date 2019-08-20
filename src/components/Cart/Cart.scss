@@ -1,0 +1,10 @@
+@import '../../css/Theme.scss';
+
+.cart {
+	color: $grey-seven;
+
+	&__icon {
+		font-size: 21px;
+		margin-right: 5px;
+	}
+}

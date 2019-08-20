@@ -81,12 +81,16 @@
 ## Javascript
 
 -  Arrow functions instead of `bind.this`, simplifying code.
+-  Behavior of responsive menu based on state, with click interaction.
+-  Component `<TextField />` with animations and interactions simular to Material Design component.
 -  Components with multi functionalities are located on directory `/widgets`.
 -  Destructuring of states and props to keep a clean code and declarative.
 -  `.map` to list items from API.
 -  `PropTypes` to better component maintenance and understanding.
 -  Reusable components are located on directory `/components`.
 -  Pages are located on directory `/pages`;
+-  Pages without layout is in blank, have only your own title as text, simulating routes.
+-  Some buttons with `alert()` telling what the user can expect of them.
 -  Some components are stateless, focused on performance.
 
 ## Tests

@@ -1,0 +1,14 @@
+@import '../../css/Theme.scss';
+
+.burger-menu {
+	background-color: transparent;
+	border: none;
+	font-size: 36px;
+	height: 85px;
+	outline: none;
+	width: 85px;
+
+	@include breakpoint(tabletL) {
+		display: none;
+	}
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BurgerMenu UI <BurgerMenu /> must have the snapshot version. 1`] = `
+<button
+  className="burger-menu"
+>
+  <i
+    className="burger-menu__icon fas fa-bars"
+  />
+</button>
+`;

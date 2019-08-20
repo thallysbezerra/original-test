@@ -49,6 +49,14 @@
 	font-style: normal;
 }
 
+// Icons using Font Awesome
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.fas {
+	font-family: 'Fontawesome' !important;
+	font-style: normal !important;
+}
+
 // Global style declaration
 body {
 	font-family: 'Open Sans', sans-serif;

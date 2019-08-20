@@ -1,0 +1,65 @@
+@import '../../css/Theme.scss';
+
+.text-field {
+	position: relative;
+	width: 100%;
+
+	&.active {
+		.text-field__label {
+			font-size: 12px;
+			transform: translateY(-18px);
+		}
+	}
+
+	&__input {
+		border: none;
+		border-bottom: 1px solid $grey-four;
+		box-sizing: border-box;
+		color: $grey-seven;
+		height: 32px;
+		outline: none;
+		padding: 0 0 0 50px;
+		transition: border-color 0.15s ease-in-out;
+		width: 100%;
+
+		&:focus {
+			border-color: $salmon;
+
+			& ~ .text-field__label {
+				color: $salmon;
+				font-size: 12px;
+				transform: translateY(-18px);
+			}
+		}
+	}
+
+	&__label {
+		color: $grey-seven;
+		left: 50px;
+		position: absolute;
+		top: 10px;
+		transition: color 0.15s ease-in-out, font-size 0.15s ease-in-out,
+			transform 0.15s ease-in-out;
+	}
+
+	&__button {
+		align-items: center;
+		background-color: transparent;
+		border: none;
+		color: $grey-seven;
+		display: flex;
+		font-size: 21px;
+		height: 32px;
+		justify-content: center;
+		outline: none;
+		position: absolute;
+		transition: color 0.15s ease-in-out;
+		top: 0;
+		width: 32px;
+
+		&:hover {
+			color: $salmon;
+			cursor: pointer;
+		}
+	}
+}
