@@ -2,7 +2,7 @@
 
 .footer {
 	border-top: 2px solid $ice;
-	margin-top: 145px;
+	margin-top: 230px;
 	position: relative;
 
 	&--container {
@@ -19,6 +19,7 @@
 		justify-content: center;
 		left: 50%;
 		position: absolute;
+		top: -165px;
 		transform: translate(-50%, -50%);
 		width: 290px;
 
@@ -26,6 +27,7 @@
 			left: initial;
 			right: 0;
 			transform: translate(0, -50%);
+			top: -20px;
 		}
 
 		&--container {
@@ -42,6 +44,120 @@
 		&__button {
 			margin: 0 auto;
 			width: 110px;
+		}
+	}
+
+	&__content {
+		margin-top: 165px;
+
+		@include breakpoint(tabletL) {
+			display: flex;
+			margin-top: 20px;
+		}
+
+		&__medias {
+			&__social-media {
+				list-style: none;
+				margin-bottom: 30px;
+				padding: 0;
+
+				&__item {
+					display: inline-block;
+					margin-right: 20px;
+
+					&__link {
+						color: $salmon;
+						font-size: 24px;
+						text-decoration: none;
+					}
+				}
+			}
+
+			&__partners {
+				list-style: none;
+				margin-bottom: 30px;
+				padding: 0;
+
+				&__item {
+					display: inline-block;
+					margin-right: 40px;
+				}
+
+				@include breakpoint(tabletL) {
+					margin-right: 60px;
+				}
+			}
+		}
+
+		&__links {
+			@include breakpoint(tabletL) {
+				display: flex;
+			}
+
+			&__list {
+				list-style: none;
+				margin-bottom: 30px;
+				padding: 0;
+
+				@include breakpoint(tabletL) {
+					margin-right: 50px;
+				}
+
+				&__title {
+					color: $ice;
+					font-family: 'Gotham Bold';
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+
+				&__item__link {
+					color: $black;
+					font-size: 14px;
+					line-height: 42px;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+	&__info {
+		background-color: $salmon;
+		padding: 20px 0;
+
+		@include breakpoint(tabletL) {
+			padding: 20px 0 10px;
+		}
+
+		&--container {
+			display: flex;
+			flex-direction: column;
+
+			@include breakpoint(tabletL) {
+				align-items: center;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
+		&__text {
+			&__p {
+				color: $white;
+				font-size: 12px;
+				margin: 0 0 10px;
+			}
+		}
+
+		&__logo {
+			align-self: flex-end;
+			margin-top: -10px;
+
+			@include breakpoint(tabletL) {
+				align-self: initial;
+			}
 		}
 	}
 }

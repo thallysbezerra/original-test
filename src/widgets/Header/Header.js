@@ -24,6 +24,12 @@ export default class Header extends Component {
 		this.setState({
 			showMenu: !showMenu
 		});
+
+		if (showMenu === true) {
+			document.body.style.overflow = 'visible';
+		} else {
+			document.body.style.overflow = 'hidden';
+		}
 	};
 
 	render() {
