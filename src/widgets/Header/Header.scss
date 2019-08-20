@@ -4,6 +4,10 @@
 	font-family: 'Gotham Book';
 	margin-bottom: 10px;
 
+	&.container {
+		padding: 0;
+	}
+
 	&__logo-area {
 		align-items: center;
 		border-bottom: 1px solid $grey-four;
@@ -126,6 +130,10 @@
 				&__search-input {
 					margin-right: 20px;
 					max-width: 200px;
+
+					.text-field__input {
+						margin-bottom: 0;
+					}
 				}
 			}
 		}

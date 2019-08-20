@@ -33,18 +33,20 @@ export default class TextField extends Component {
 				}`}
 			>
 				<input
-					className="text-field__input"
+					className={`text-field__input text-field__input--${
+						!icon ? 'no-icon' : ''
+					}`}
 					id={id}
 					onChange={this.handleChange}
 					type={type}
 					value={value}
 				/>
-				<label className="text-field__label">{placeholder}</label>
 				{icon && (
 					<button className="text-field__button" onClick={onClickIcon}>
 						<i className={`text-field__button__icon fas fa-${icon}`} />
 					</button>
 				)}
+				<label className="text-field__label">{placeholder}</label>
 			</div>
 		);
 	}

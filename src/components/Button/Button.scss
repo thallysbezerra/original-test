@@ -1,0 +1,47 @@
+@import '../../css/Theme.scss';
+
+.button {
+	background-color: $salmon;
+	border: 1px solid $salmon;
+	border-radius: 3px;
+	color: $white;
+	outline: none;
+	text-transform: uppercase;
+	transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+	width: 100%;
+
+	&:hover {
+		background-color: $white;
+		color: $salmon;
+		cursor: pointer;
+	}
+
+	&--secondary {
+		background-color: $green-medium;
+		border-color: $green-medium;
+
+		&:hover {
+			color: $green-medium;
+		}
+	}
+
+	&--small {
+		font-size: 12px;
+		height: 42px;
+	}
+
+	&--medium {
+		font-size: 14px;
+		height: 50px;
+	}
+
+	&--large {
+		font-size: 18px;
+		height: 60px;
+	}
+
+	&--extra-large {
+		font-size: 26px;
+		height: 80px;
+	}
+}

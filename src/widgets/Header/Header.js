@@ -30,7 +30,7 @@ export default class Header extends Component {
 		const { showMenu } = this.state;
 
 		return (
-			<header className="header">
+			<header className="header container">
 				<div className="header__logo-area">
 					<Link className="header__logo-area__item__link" to="/">
 						<img

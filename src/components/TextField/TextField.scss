@@ -5,9 +5,11 @@
 	width: 100%;
 
 	&.active {
-		.text-field__label {
-			font-size: 12px;
-			transform: translateY(-18px);
+		.text-field {
+			&__label {
+				font-size: 12px;
+				transform: translateY(-18px);
+			}
 		}
 	}
 
@@ -17,6 +19,7 @@
 		box-sizing: border-box;
 		color: $grey-seven;
 		height: 32px;
+		margin-bottom: 20px;
 		outline: none;
 		padding: 0 0 0 50px;
 		transition: border-color 0.15s ease-in-out;
@@ -30,6 +33,14 @@
 				font-size: 12px;
 				transform: translateY(-18px);
 			}
+		}
+
+		& + .text-field__label {
+			left: 0;
+		}
+
+		&--no-icon {
+			padding: 0;
 		}
 	}
 

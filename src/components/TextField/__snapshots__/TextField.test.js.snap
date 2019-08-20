@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField UI <TextField /> must have the snapshot version. 1`] = `
+<div
+  className="text-field  "
+>
+  <input
+    className="text-field__input text-field__input--no-icon"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <label
+    className="text-field__label"
+  />
+</div>
+`;
