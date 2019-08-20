@@ -1,0 +1,13 @@
+@import '../../css/Theme.scss';
+
+.recommended-products {
+	margin-top: 100px;
+
+	&__title {
+		color: $salmon;
+		font-family: 'Gotham Book';
+		font-size: 26px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

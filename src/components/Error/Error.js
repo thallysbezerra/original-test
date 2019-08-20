@@ -4,8 +4,8 @@ import './Error.scss';
 const Error = () => (
 	<div className="error">
 		Desculpe! <br />
-		Alguma coisa não seu certo. <br />
-		Tente novamente mai tarde.
+		Alguma coisa não deu certo. <br />
+		Tente novamente mais tarde.
 	</div>
 );
 
