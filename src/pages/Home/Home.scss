@@ -1,8 +1,6 @@
 @import '../../css/Theme.scss';
 
-@import '../../css/Theme.scss';
-
-.sapatos--grid-container {
+.home--grid-container {
 	@include breakpoint(tabletL) {
 		display: grid;
 		grid-gap: 105px;

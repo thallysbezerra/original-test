@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton UI <IconButton /> must have the snapshot version. 1`] = `
+<button
+  className="icon-button icon-button--primary icon-button--medium "
+  onClick={[Function]}
+>
+  <i
+    className="icon-button__icon fas fa-question-circle"
+  />
+</button>
+`;

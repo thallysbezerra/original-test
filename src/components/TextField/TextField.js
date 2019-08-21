@@ -62,5 +62,6 @@ TextField.propTypes = {
 };
 
 TextField.defaultProps = {
+	placeholder: 'Needs a placeholder',
 	type: 'text'
 };

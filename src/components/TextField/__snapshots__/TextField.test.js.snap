@@ -12,6 +12,8 @@ exports[`TextField UI <TextField /> must have the snapshot version. 1`] = `
   />
   <label
     className="text-field__label"
-  />
+  >
+    Needs a placeholder
+  </label>
 </div>
 `;

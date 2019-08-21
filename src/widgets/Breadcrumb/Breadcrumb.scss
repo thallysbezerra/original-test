@@ -1,0 +1,31 @@
+@import '../../css/Theme.scss';
+
+.breadcrumb {
+	list-style: none;
+	padding: 0;
+
+	&__page {
+		color: $ice;
+		display: inline-block;
+		font-family: 'Gotham Book';
+		font-size: 12px;
+		margin: 10px 25px 20px 0;
+		position: relative;
+
+		&:after {
+			content: '/';
+			right: -15px;
+			position: absolute;
+		}
+
+		&:last-child {
+			&:after {
+				content: '';
+			}
+		}
+
+		&.active {
+			font-family: 'Gotham Bold';
+		}
+	}
+}

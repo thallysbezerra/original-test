@@ -6,6 +6,7 @@ exports[`Pagination UI <Pagination /> must have the snapshot version. 1`] = `
 >
   <button
     className="icon-button icon-button--secondary icon-button--small "
+    disabled={true}
     onClick={[Function]}
   >
     <i

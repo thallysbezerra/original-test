@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
+import BreadCrumb from './widgets/Breadcrumb/Breadcrumb';
 import Footer from './widgets/Footer/Footer';
 import Header from './widgets/Header/Header';
 
@@ -11,6 +12,7 @@ export default class App extends Component {
 		return (
 			<BrowserRouter>
 				<Header />
+				<BreadCrumb />
 				<Routes />
 				<Footer />
 			</BrowserRouter>

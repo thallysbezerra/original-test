@@ -1,0 +1,115 @@
+@import '../../css/Theme.scss';
+
+.product-details {
+	border: 2px solid $grey-four;
+	margin-bottom: 50px;
+	max-width: 444px;
+	padding: 20px;
+
+	&__title {
+		font-family: 'Gotham Bold';
+		font-size: 26px;
+		margin: 0 0 10px;
+		text-transform: uppercase;
+	}
+
+	&__ref {
+		display: block;
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+
+	&__price {
+		&--original {
+			border-right: 1px solid $red;
+			color: $red;
+			margin-right: 10px;
+			padding-right: 10px;
+			text-decoration: line-through;
+		}
+
+		&--promotional {
+			color: $grey-seven;
+			font-family: 'Gotham Bold';
+			font-size: 28px;
+		}
+
+		&--split {
+			color: $grey-six;
+			display: block;
+			font-size: 12px;
+			margin: 5px 0 35px;
+		}
+	}
+
+	&__color,
+	&__size {
+		font-size: 14px;
+
+		&__name {
+			color: $ice;
+			margin-left: 5px;
+		}
+	}
+
+	&__color {
+		&__dot {
+			border: none;
+			box-shadow: 0 0 0 5px transparent;
+			border-radius: 50%;
+			height: 25px;
+			margin: 10px 10px 20px 0;
+			transition: box-shadow 0.15s ease-in-out;
+			width: 25px;
+
+			&:hover,
+			&.active {
+				box-shadow: 0 0 0 5px $green-light;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__size {
+		&__button {
+			background-color: transparent;
+			border: none;
+			color: $salmon;
+			float: right;
+
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		}
+
+		&--wrapper {
+			display: grid;
+			grid-gap: 5px;
+			grid-template-columns: repeat(auto-fill, 35px);
+			margin: 10px 0 60px;
+		}
+
+		&__dot {
+			background-color: $grey-two;
+			border: none;
+			border-radius: 50%;
+			color: $blue-dark;
+			font-family: 'Gotham Book';
+			height: 35px;
+			width: 35px;
+
+			&:hover,
+			&.active {
+				background-color: $green-light;
+				font-family: 'Gotham Bold';
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__description {
+		line-height: 29px;
+		margin: 20px 0 0;
+	}
+}
