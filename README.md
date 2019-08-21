@@ -4,20 +4,20 @@
 
 -  **Code editor**: Visual Studio Code
 
-       		 	<details>
-       		 	<summary>Important extensions</summary>
+      <details>
+      <summary>Important extensions</summary>
 
-       		 	-  Auto Rename Tag
-       		 	-  Auto-Open Markdown Preview
-       		 	-  Brackt Pair Colorizer
-       		 	-  VS Code ES7 React/Redux/React-Native/JS snippets
-       		 	-  ESLint
-       		 	-  GitLens
-       		 	-  JavaScript (ES6) code snippets
-       		 	-  Prettier - Code formatter
-       		 	-  SCSS formatter
+      -  Auto Rename Tag
+      -  Auto-Open Markdown Preview
+      -  Brackt Pair Colorizer
+      -  VS Code ES7 React/Redux/React-Native/JS snippets
+      -  ESLint
+      -  GitLens
+      -  JavaScript (ES6) code snippets
+      -  Prettier - Code formatter
+      -  SCSS formatter
 
-       		 	</details>
+      </details>
 
 -  **CSS preprocessor**: SASS/SCSS
 
@@ -27,18 +27,18 @@
 
 -  **Package manager**: NPM/Yarn
 
-       	<details>
-       	<summary>Dependencies</summary>
+      <details>
+      <summary>Dependencies</summary>
 
-       	-  chai
-       	-  node-sass
-       	-  react-responsive
-       	-  react-router-dom
-       	-  react-slick
-       	-  react-test-renderer
-       	-  slick-carousel
+      -  chai
+      -  node-sass
+      -  react-responsive
+      -  react-router-dom
+      -  react-slick
+      -  react-test-renderer
+      -  slick-carousel
 
-       	</details>
+      </details>
 
 -  **Server**: Node.js
 
@@ -49,7 +49,7 @@
 -  API link: http://www.mocky.io/v2/5d5b259e2f00002c0036fa0b
 -  Backup of API mocked on direcory `/api`.
 -  Images (normal and thumbnails) edited on Photoshop CC and hosted on https://imgur.com/.
--  Success, requesting and error feedback combining `fetch` and `catch` with ternaries.
+-  Success, requesting and error feedback combining `fetch` and `catch` with conditional structure using `switch`.
 
 ## CSS
 
@@ -72,7 +72,7 @@
 ## HTML
 
 -  HTML5 following W3C Standards recommendations.
--  Favicon generated on https://www.favicon-generator.org/
+-  Favicon generated on https://www.favicon-generator.org/.
 
 ## Javascript
 
