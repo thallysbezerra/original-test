@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 import Error from '../../components/Error/Error';
 import Loading from '../../components/Loading/Loading';
 
+import ProductDetails from '../../widgets/ProductDetails/ProductDetails';
+import ProductMedias from '../../widgets/ProductMedias/ProductMedias';
 import RecommendedProducts from '../../widgets/RecommendedProducts/RecommendedProducts';
+
+import './Sapatos.scss';
 
 export default class Sapatos extends Component {
 	constructor(props) {
@@ -41,7 +45,42 @@ export default class Sapatos extends Component {
 			case 'error':
 				return <Error />;
 			case 'success':
-				return <RecommendedProducts api={api} />;
+				return (
+					<>
+						<section className="sapatos--grid-container container">
+							<ProductMedias
+								imgArr={api[1].img}
+								principalImg={api[1].img[0].imgUrl}
+								title={api[1].title}
+							/>
+
+							<ProductDetails
+								api={api}
+								colorArr={api[1].color}
+								colorName={api[1].color[0].colorName}
+								description={api[1].description}
+								installments={
+									api[1].price.installmentType[
+										api[1].price.installmentType.length - 1
+									].installments
+								}
+								installmentsValue={
+									api[1].price.installmentType[
+										api[1].price.installmentType.length - 1
+									].installmentsValue
+								}
+								model={api[1].model}
+								originalPrice={api[1].price.original}
+								promotionalPrice={api[1].price.promotional}
+								reference={api[1].ref}
+								sizeArr={api[1].size}
+								sizeSelected={api[1].size[0]}
+								title={api[1].title}
+							/>
+						</section>
+						<RecommendedProducts api={api} />
+					</>
+				);
 			default:
 				return <Loading />;
 		}

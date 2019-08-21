@@ -1,0 +1,88 @@
+@import '../../css/Theme.scss';
+
+.product-details {
+	&__img-area {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 45px 1fr;
+
+		@include breakpoint(tabletL) {
+			display: grid;
+			grid-gap: 65px;
+			grid-template-columns: 75px 1fr;
+		}
+
+		&--container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			position: relative;
+		}
+
+		&__list {
+			list-style: none;
+			margin: 0;
+			height: 258px;
+			overflow-y: scroll;
+			padding: 0;
+
+			@include breakpoint(tabletL) {
+				height: 411px;
+				overflow-y: overlay;
+			}
+
+			&__video-area {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+
+				&__title {
+					color: $salmon;
+					font-size: 12px;
+					margin-bottom: 5px;
+				}
+			}
+
+			&__item {
+				margin-bottom: 5px;
+
+				&__img {
+					width: 100%;
+
+					@include breakpoint(tabletL) {
+						max-width: 418px;
+					}
+				}
+			}
+
+			&__button {
+				background-color: transparent;
+				border: none;
+				color: $black;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+
+				&--up {
+					top: 65px;
+
+					@include breakpoint(tabletL) {
+						top: 95px;
+					}
+				}
+
+				&--down {
+					bottom: -25px;
+
+					@include breakpoint(tabletL) {
+						bottom: -30px;
+					}
+				}
+			}
+		}
+
+		&__img {
+			width: 100%;
+		}
+	}
+}

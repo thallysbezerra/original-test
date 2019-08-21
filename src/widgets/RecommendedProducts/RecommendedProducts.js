@@ -4,16 +4,18 @@ import MediaQuery from 'react-responsive';
 import monetaryMask from '../../helpers/monetaryMask';
 
 import IconButton from '../../components/IconButton/IconButton';
+import Pagination from '../../components/Pagination/Pagination';
 
 import './RecommendedProducts.scss';
-import Pagination from '../../components/Pagination/Pagination';
 
 export default class RecommendedProducts extends Component {
 	render() {
 		const { api } = this.props;
 
 		const settings = {
+			arrows: false,
 			autoplay: true,
+			dots: true,
 			infinite: true,
 			speed: 500,
 			slidesToShow: 1,

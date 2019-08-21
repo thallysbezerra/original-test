@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -30,24 +31,27 @@ const Footer = () => (
 				<div className="footer__content__medias">
 					<ul className="footer__content__medias__social-media">
 						<li className="footer__content__medias__social-media__item">
-							<Link
+							<a
 								className="footer__content__medias__social-media__item__link fas fa-facebook"
+								href="https://www.facebook.com/"
+								rel="noopener noreferrer"
 								target="_blank"
-								to="https://www.facebook.com/"
 							/>
 						</li>
 						<li className="footer__content__medias__social-media__item">
-							<Link
+							<a
 								className="footer__content__medias__social-media__item__link fas fa-instagram"
+								href="http://instagram.com/"
+								rel="noopener noreferrer"
 								target="_blank"
-								to="http://instagram.com/"
 							/>
 						</li>
 						<li className="footer__content__medias__social-media__item">
-							<Link
+							<a
 								className="footer__content__medias__social-media__item__link fas fa-pinterest"
+								href="http://pinterest.com/"
+								rel="noopener noreferrer"
 								target="_blank"
-								to="http://pinterest.com/"
 							/>
 						</li>
 					</ul>

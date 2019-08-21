@@ -1,6 +1,7 @@
 @import '../../css/Theme.scss';
 
 .header {
+	border-bottom: 1px solid $grey-four;
 	font-family: 'Gotham Book';
 	margin-bottom: 10px;
 
@@ -10,13 +11,13 @@
 
 	&__logo-area {
 		align-items: center;
-		border-bottom: 1px solid $grey-four;
 		display: flex;
 		height: 85px;
 		padding-left: 20px;
 		justify-content: space-between;
 
 		@include breakpoint(tabletL) {
+			border-bottom: 1px solid $grey-four;
 			justify-content: center;
 		}
 	}
@@ -54,6 +55,10 @@
 			position: relative;
 			right: initial;
 			top: initial;
+
+			@include breakpoint(tabletL) {
+				border-bottom: none;
+			}
 		}
 
 		&__login-area,

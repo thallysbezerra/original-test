@@ -1,0 +1,11 @@
+@import '../../css/Theme.scss';
+
+@import '../../css/Theme.scss';
+
+.sapatos--grid-container {
+	@include breakpoint(tabletL) {
+		display: grid;
+		grid-gap: 105px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
