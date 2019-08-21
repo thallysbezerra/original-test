@@ -4,20 +4,20 @@
 
 -  **Code editor**: Visual Studio Code
 
-   <details>
-   <summary>Important extensions</summary>
+       		 	<details>
+       		 	<summary>Important extensions</summary>
 
-   -  Auto Rename Tag
-   -  Auto-Open Markdown Preview
-   -  Brackt Pair Colorizer
-   -  VS Code ES7 React/Redux/React-Native/JS snippets
-   -  ESLint
-   -  GitLens
-   -  JavaScript (ES6) code snippets
-   -  Prettier - Code formatter
-   -  SCSS formatter
+       		 	-  Auto Rename Tag
+       		 	-  Auto-Open Markdown Preview
+       		 	-  Brackt Pair Colorizer
+       		 	-  VS Code ES7 React/Redux/React-Native/JS snippets
+       		 	-  ESLint
+       		 	-  GitLens
+       		 	-  JavaScript (ES6) code snippets
+       		 	-  Prettier - Code formatter
+       		 	-  SCSS formatter
 
-   </details>
+       		 	</details>
 
 -  **CSS preprocessor**: SASS/SCSS
 
@@ -27,18 +27,18 @@
 
 -  **Package manager**: NPM/Yarn
 
-   <details>
-   <summary>Dependencies</summary>
+       	<details>
+       	<summary>Dependencies</summary>
 
-   -  chai
-   -  enzyme
-   -  enzyme-adapter-react-16
-   -  node-sass
-   -  ramda
-   -  react-router-dom
-   -  react-test-renderer
+       	-  chai
+       	-  node-sass
+       	-  react-responsive
+       	-  react-router-dom
+       	-  react-slick
+       	-  react-test-renderer
+       	-  slick-carousel
 
-   </details>
+       	</details>
 
 -  **Server**: Node.js
 
@@ -64,11 +64,7 @@
 -  Font-weight variables are declared on `Fonts.scss`.
 -  Icons using Font Awesome as @font-face imported from CDN.
 -  `@keyframes` animations are imported from `Animations.scss`.
--  Mobile first with four breakpoints using:
-   -  Only on mobile: Screen resolution <= 767px.
-   -  Tablet portrait mode: Screen resolution >= 768px.
-   -  Tablet landscape mode: Screen resolution >= 1024px.
-   -  Desktop: Screen resolution >= 1280px.
+-  Mobile first with four breakpoints using: - Only on mobile: Screen resolution <= 767px. - Tablet portrait mode: Screen resolution >= 768px. - Tablet landscape mode: Screen resolution >= 1024px. - Desktop: Screen resolution >= 1280px.
 -  Some animations combining `@keyframes` with `transitions`.
 -  Some animations using `transform` property, focused on device/web performance.
 -  Using SASS/SCSS.
@@ -90,6 +86,9 @@
 -  Reusable components are located on directory `/components`.
 -  Pages are located on directory `/pages`;
 -  Pages without layout is in blank, have only your own title as text, simulating routes.
+-  `react-responsive` to show same component with different behaviour depending on device.
+-  `react-router-dom` to create routes without refresh browser.
+-  `react-slick` and `slick-carousel` was used to create a slider on mobile devices.
 -  Some buttons with `alert()` telling what the user can expect of them.
 -  Some components are stateless, focused on performance.
 

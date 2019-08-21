@@ -21,7 +21,7 @@ const Footer = () => (
 					<Button
 						className="footer__news__button"
 						name="Enviar"
-						onClick={() => alert('Enviar informações')}
+						onClick={() => alert('Enviar lead')}
 					/>
 				</div>
 			</div>

@@ -7,6 +7,8 @@ exports[`Button UI <Button /> must have the snapshot version. 1`] = `
   <button
     className="button button--medium button--primary"
     onClick={[Function]}
-  />
+  >
+    Needs a name
+  </button>
 </div>
 `;

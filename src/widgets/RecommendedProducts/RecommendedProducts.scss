@@ -10,4 +10,69 @@
 		text-align: center;
 		text-transform: uppercase;
 	}
+
+	&__list {
+		list-style: none;
+		padding: 0;
+
+		@include breakpoint(tabletL) {
+			display: grid;
+			grid-gap: 15px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		&__item {
+			&__img {
+				margin: 0 auto;
+
+				&--wrapper {
+					margin: 0 auto;
+					max-width: 290px;
+					position: relative;
+				}
+			}
+
+			&__icon-button {
+				opacity: 0.6;
+				position: absolute;
+				right: 15px;
+				transition: transform 0.15s ease-in-out;
+				top: 10px;
+
+				&:hover {
+					color: $salmon;
+					background-color: $white;
+					border-color: $salmon;
+					transform: rotate(90deg);
+				}
+
+				@include breakpoint(tabletL) {
+					right: 15px;
+				}
+			}
+
+			&__info {
+				display: flex;
+				justify-content: space-between;
+				margin: 0 auto;
+				max-width: 290px;
+
+				&__price {
+					margin-top: 10px;
+				}
+
+				&__colors {
+					margin-top: 10px;
+
+					&__dot {
+						border-radius: 9px;
+						display: inline-block;
+						height: 18px;
+						margin-left: 10px;
+						width: 18px;
+					}
+				}
+			}
+		}
+	}
 }

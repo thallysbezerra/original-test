@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination UI <Pagination /> must have the snapshot version. 1`] = `
+<div
+  className="pagination"
+>
+  <button
+    className="icon-button icon-button--secondary icon-button--small "
+    onClick={[Function]}
+  >
+    <i
+      className="icon-button__icon fas fa-chevron-left"
+    />
+  </button>
+  <div
+    className="pagination__info"
+  >
+    1 de 10
+  </div>
+  <button
+    className="icon-button icon-button--secondary icon-button--small "
+    onClick={[Function]}
+  >
+    <i
+      className="icon-button__icon fas fa-chevron-right"
+    />
+  </button>
+</div>
+`;

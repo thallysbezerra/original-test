@@ -1,0 +1,59 @@
+@import '../../css/Theme.scss';
+
+.icon-button {
+	align-items: center;
+	border: 2px solid;
+	border-radius: 50%;
+	background-color: $white;
+	display: flex;
+	justify-content: center;
+	outline: none;
+	transition: background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, color 0.15s ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:disabled {
+		border-color: $grey-four;
+		color: $grey-four;
+		pointer-events: none;
+	}
+
+	&--small {
+		@extend .icon-button;
+		font-size: 18px;
+		height: 35px;
+		width: 35px;
+	}
+
+	&--medium {
+		@extend .icon-button;
+		font-size: 24px;
+		height: 45px;
+		width: 45px;
+	}
+
+	&--primary {
+		border-color: $salmon;
+		color: $salmon;
+
+		&:hover {
+			background-color: $salmon;
+			border-color: $white;
+			color: $white;
+		}
+	}
+
+	&--secondary {
+		border-color: $blue-dark;
+		color: $blue-dark;
+
+		&:hover {
+			background-color: $blue-dark;
+			border-color: $white;
+			color: $white;
+		}
+	}
+}

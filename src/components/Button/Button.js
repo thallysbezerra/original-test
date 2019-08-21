@@ -1,38 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.scss';
 
-export default class Button extends Component {
-	searchResult(param) {
-		switch (param) {
-			case 'small':
-				return 'small';
-			case 'large':
-				return 'large';
-			case 'extra-large':
-				return 'extra-large';
-			default:
-				return 'medium';
-		}
-	}
-
-	render() {
-		const { className, color, id, onClick, name, size } = this.props;
-		return (
-			<div className={`button--wrapper ${className ? className : ''}`}>
-				<button
-					className={`button button--${this.searchResult(size)} button--${
-						color ? color : ''
-					}`}
-					id={id}
-					onClick={onClick}
-				>
-					{name}
-				</button>
-			</div>
-		);
-	}
-}
+const Button = ({ className, color, id, onClick, name, size }) => (
+	<div className={`button--wrapper ${className ? className : ''}`}>
+		<button
+			className={`button button--${size} button--${color ? color : ''}`}
+			id={id}
+			onClick={onClick}
+		>
+			{name}
+		</button>
+	</div>
+);
 
 Button.propTypes = {
 	color: PropTypes.string,
@@ -44,5 +24,9 @@ Button.propTypes = {
 
 Button.defaultProps = {
 	color: 'primary',
-	onClick: () => console.log('Do something')
+	name: 'Needs a name',
+	onClick: () => console.log('Do something'),
+	size: 'medium'
 };
+
+export default Button;
