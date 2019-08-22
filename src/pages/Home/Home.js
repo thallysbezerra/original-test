@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 
 import Error from '../../components/Error/Error';
 import Loading from '../../components/Loading/Loading';
+import IconButton from '../../components/IconButton/IconButton';
 
 import ProductDetails from '../../widgets/ProductDetails/ProductDetails';
 import ProductMedias from '../../widgets/ProductMedias/ProductMedias';
 import RecommendedProducts from '../../widgets/RecommendedProducts/RecommendedProducts';
+
+import monetaryMask from '../../helpers/monetaryMask';
 
 import './Home.scss';
 
@@ -14,7 +17,8 @@ export default class Home extends Component {
 		super(props);
 		this.state = {
 			api: null,
-			apiStatus: null
+			apiStatus: null,
+			productToShow: 1
 		};
 	}
 
@@ -38,57 +42,101 @@ export default class Home extends Component {
 			});
 	}
 
-	apiResponse(param) {
-		const { api } = this.state;
+	handleChangeProduct = product => {
+		this.setState({
+			productToShow: product
+		});
+	};
 
-		switch (param) {
-			case 'error':
-				return <Error />;
-			case 'success':
-				return (
+	render() {
+		const { api, apiStatus, productToShow } = this.state;
+
+		return (
+			<div className="sapatos">
+				{apiStatus === 'error' ? (
+					<Error />
+				) : apiStatus === 'success' ? (
 					<>
 						<section className="home--grid-container container">
 							<ProductMedias
-								imgArr={api[1].img}
-								principalImg={api[1].img[0].imgUrl}
-								title={api[1].title}
+								apiProduct={api[productToShow]}
+								imgArr={api[productToShow].img}
+								principalImg={api[productToShow].img[0].imgUrl}
+								title={api[productToShow].title}
 							/>
 
 							<ProductDetails
 								api={api}
-								colorArr={api[1].color}
-								colorName={api[1].color[0].colorName}
-								description={api[1].description}
+								colorArr={api[productToShow].color}
+								colorName={api[productToShow].color[0].colorName}
+								description={api[productToShow].description}
 								installments={
-									api[1].price.installmentType[
-										api[1].price.installmentType.length - 1
+									api[productToShow].price.installmentType[
+										api[productToShow].price.installmentType.length -
+											1
 									].installments
 								}
 								installmentsValue={
-									api[1].price.installmentType[
-										api[1].price.installmentType.length - 1
+									api[productToShow].price.installmentType[
+										api[productToShow].price.installmentType.length -
+											1
 									].installmentsValue
 								}
-								model={api[1].model}
-								originalPrice={api[1].price.original}
-								promotionalPrice={api[1].price.promotional}
-								reference={api[1].ref}
-								sizeArr={api[1].size}
-								sizeSelected={api[1].size[0]}
-								title={api[1].title}
+								model={api[productToShow].model}
+								originalPrice={api[productToShow].price.original}
+								promotionalPrice={api[productToShow].price.promotional}
+								reference={api[productToShow].ref}
+								sizeArr={api[productToShow].size}
+								sizeSelected={api[productToShow].size[0]}
+								title={api[productToShow].title}
 							/>
 						</section>
-						<RecommendedProducts api={api} />
+						<RecommendedProducts api={api}>
+							{api.map((item, index) => (
+								<li
+									className="recommended-products__list__item"
+									key={index}
+								>
+									<div className="recommended-products__list__item__img--wrapper">
+										<img
+											className="recommended-products__list__item__img"
+											onClick={() => this.handleChangeProduct(index)}
+											src={item.img[0].thumbnail}
+											alt={item.title}
+										/>
+										<IconButton
+											className="recommended-products__list__item__icon-button"
+											color="primary"
+											icon="plus"
+											onClick={() =>
+												alert('Adiciona produto direto à sacola')
+											}
+										/>
+									</div>
+									<div className="recommended-products__list__item__info">
+										<div className="recommended-products__list__item__info__price">
+											{monetaryMask(item.price.promotional)}
+										</div>
+										<div className="recommended-products__list__item__info__colors">
+											{item.color.map((subitem, index) => (
+												<span
+													className="recommended-products__list__item__info__colors__dot"
+													key={index}
+													style={{
+														backgroundColor: subitem.hexColor
+													}}
+												/>
+											))}
+										</div>
+									</div>
+								</li>
+							))}
+						</RecommendedProducts>
 					</>
-				);
-			default:
-				return <Loading />;
-		}
-	}
-
-	render() {
-		const { apiStatus } = this.state;
-
-		return <div className="sapatos">{this.apiResponse(apiStatus)}</div>;
+				) : (
+					<Loading />
+				)}
+			</div>
+		);
 	}
 }

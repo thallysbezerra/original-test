@@ -72,13 +72,18 @@ export default class ProductInfo extends Component {
 					<div className="product-details__size--wrapper">
 						{sizeArr.map((item, index) => (
 							<button className="product-details__size__dot" key={index}>
-								{item}
+								{item !== 'Tamanho único' ? item : 'U'}
 							</button>
 						))}
 					</div>
 				</div>
 
-				<Button color="secondary" name="Adicionar à sacola" size="large" />
+				<Button
+					color="secondary"
+					onClick={() => alert('Adiciona produto à sacola')}
+					name="Adicionar à sacola"
+					size="large"
+				/>
 
 				<p className="product-details__description">{description}</p>
 			</div>

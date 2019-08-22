@@ -24,11 +24,17 @@
 		&__item {
 			&__img {
 				margin: 0 auto;
+				transition: transform 0.15s ease-in-out;
 
 				&--wrapper {
 					margin: 0 auto;
 					max-width: 290px;
 					position: relative;
+				}
+
+				&:hover {
+					cursor: pointer;
+					transform: scale(1.025);
 				}
 			}
 
