@@ -59,7 +59,6 @@ export default class Home extends Component {
 					<>
 						<section className="home--grid-container container">
 							<ProductMedias
-								apiProduct={api[productToShow]}
 								imgArr={api[productToShow].img}
 								principalImg={api[productToShow].img[0].imgUrl}
 								title={api[productToShow].title}
@@ -67,8 +66,9 @@ export default class Home extends Component {
 
 							<ProductDetails
 								api={api}
+								colorActive={0}
 								colorArr={api[productToShow].color}
-								colorName={api[productToShow].color[0].colorName}
+								colorSelected={api[productToShow].color[0].colorName}
 								description={api[productToShow].description}
 								installments={
 									api[productToShow].price.installmentType[
@@ -86,6 +86,7 @@ export default class Home extends Component {
 								originalPrice={api[productToShow].price.original}
 								promotionalPrice={api[productToShow].price.promotional}
 								reference={api[productToShow].ref}
+								sizeActive={0}
 								sizeArr={api[productToShow].size}
 								sizeSelected={api[productToShow].size[0]}
 								title={api[productToShow].title}

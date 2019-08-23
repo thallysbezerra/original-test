@@ -6,11 +6,49 @@ import monetaryMask from '../../helpers/monetaryMask';
 import './ProductDetails.scss';
 
 export default class ProductInfo extends Component {
+	constructor({ colorActive, colorSelected, sizeActive, sizeSelected }) {
+		super();
+		this.state = {
+			colorActive,
+			colorSelected,
+			sizeActive,
+			sizeSelected
+		};
+	}
+
+	UNSAFE_componentWillReceiveProps({
+		colorActive,
+		colorSelected,
+		sizeActive,
+		sizeSelected
+	}) {
+		this.setState({
+			...this.state,
+			colorActive,
+			colorSelected,
+			sizeActive,
+			sizeSelected
+		});
+	}
+
+	handleChangeColor = arrPos => {
+		this.setState({
+			colorActive: arrPos,
+			colorSelected: this.props.colorArr[arrPos].colorName
+		});
+	};
+
+	handleChangeSize = arrPos => {
+		this.setState({
+			sizeActive: arrPos,
+			sizeSelected: this.props.sizeArr[arrPos]
+		});
+	};
+
 	render() {
 		const {
 			api,
 			colorArr,
-			colorName,
 			description,
 			installments,
 			installmentsValue,
@@ -19,9 +57,15 @@ export default class ProductInfo extends Component {
 			promotionalPrice,
 			reference,
 			sizeArr,
-			sizeSelected,
 			title
 		} = this.props;
+
+		const {
+			colorActive,
+			colorSelected,
+			sizeActive,
+			sizeSelected
+		} = this.state;
 
 		console.log(api);
 
@@ -46,13 +90,16 @@ export default class ProductInfo extends Component {
 				<div className="product-details__color">
 					<span className="product-details__color__label">Cor:</span>
 					<span className="product-details__color__name">
-						({colorName})
+						({colorSelected})
 					</span>
 					<div className="product-details__color__dot--wrapper">
 						{colorArr.map((item, index) => (
 							<button
-								className="product-details__color__dot"
+								className={`product-details__color__dot ${
+									colorActive === index ? 'active' : ''
+								}`}
 								key={index}
+								onClick={() => this.handleChangeColor(index)}
 								style={{
 									backgroundColor: item.hexColor
 								}}
@@ -71,7 +118,13 @@ export default class ProductInfo extends Component {
 					</button>
 					<div className="product-details__size--wrapper">
 						{sizeArr.map((item, index) => (
-							<button className="product-details__size__dot" key={index}>
+							<button
+								className={`product-details__size__dot ${
+									sizeActive === index ? 'active' : ''
+								}`}
+								key={index}
+								onClick={() => this.handleChangeSize(index)}
+							>
 								{item !== 'Tamanho único' ? item : 'U'}
 							</button>
 						))}

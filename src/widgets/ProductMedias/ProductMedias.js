@@ -5,21 +5,29 @@ import IconButton from '../../components/IconButton/IconButton';
 import './ProductMedias.scss';
 
 export default class ProductMedias extends Component {
-	constructor(props) {
-		super(props);
+	constructor({ principalImg }) {
+		super();
 		this.state = {
-			imgToShow: this.props.imgArr[0].imgUrl
+			imgToShow: principalImg
 		};
 	}
 
-	handleChangeImg = imgNumber => {
+	UNSAFE_componentWillReceiveProps({ principalImg }) {
 		this.setState({
-			imgToShow: this.props.imgArr[imgNumber].imgUrl
+			...this.state,
+			imgToShow: principalImg
+		});
+	}
+
+	handleChangeImg = arrPos => {
+		this.setState({
+			imgToShow: this.props.imgArr[arrPos].imgUrl
 		});
 	};
 
 	render() {
-		const { imgArr, principalImg, title } = this.props;
+		const { imgArr, title } = this.props;
+		const { imgToShow } = this.state;
 
 		return (
 			<div className="product-medias">
@@ -31,7 +39,11 @@ export default class ProductMedias extends Component {
 						<IconButton color="secondary" icon="play" size="small" />
 					</div>
 					<ul className="product-medias__list">
-						<button className={`product-medias__list__button product-medias__list__button--up fa fa-chevron-up ${imgArr.length <= 4 ? 'hide' : ''}`} />
+						<button
+							className={`product-medias__list__button product-medias__list__button--up fa fa-chevron-up ${
+								imgArr.length <= 4 ? 'hide' : ''
+							}`}
+						/>
 						{imgArr.map((item, index) => (
 							<li className="product-medias__list__item" key={index}>
 								<img
@@ -42,13 +54,17 @@ export default class ProductMedias extends Component {
 								/>
 							</li>
 						))}
-						<button className={`product-medias__list__button product-medias__list__button--down fa fa-chevron-down ${imgArr.length <= 4 ? 'hide' : ''}`} />
+						<button
+							className={`product-medias__list__button product-medias__list__button--down fa fa-chevron-down ${
+								imgArr.length <= 4 ? 'hide' : ''
+							}`}
+						/>
 					</ul>
 				</div>
 				<div className="product-medias__img--container">
 					<img
 						className="product-medias__img"
-						src={principalImg}
+						src={imgToShow}
 						alt={title}
 					/>
 				</div>
