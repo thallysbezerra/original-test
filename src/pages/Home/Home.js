@@ -65,7 +65,6 @@ export default class Home extends Component {
 							/>
 
 							<ProductDetails
-								api={api}
 								colorActive={0}
 								colorArr={api[productToShow].color}
 								colorSelected={api[productToShow].color[0].colorName}
@@ -76,6 +75,7 @@ export default class Home extends Component {
 											1
 									].installments
 								}
+								imgToShow={api[productToShow].img[0].imgUrl}
 								installmentsValue={
 									api[productToShow].price.installmentType[
 										api[productToShow].price.installmentType.length -

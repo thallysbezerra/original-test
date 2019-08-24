@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal UI <Modal /> must have the snapshot version. 1`] = `
+<div
+  className="modal--shadow "
+>
+  <div
+    className="modal "
+  >
+    <button
+      className="modal__button--close"
+    >
+      <i
+        className="fas fa-close"
+      />
+    </button>
+  </div>
+</div>
+`;

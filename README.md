@@ -7,15 +7,15 @@
       <details>
       <summary>Important extensions</summary>
 
-      -  Auto Rename Tag
-      -  Auto-Open Markdown Preview
-      -  Brackt Pair Colorizer
-      -  VS Code ES7 React/Redux/React-Native/JS snippets
-      -  ESLint
-      -  GitLens
-      -  JavaScript (ES6) code snippets
-      -  Prettier - Code formatter
-      -  SCSS formatter
+   -  Auto Rename Tag
+   -  Auto-Open Markdown Preview
+   -  Brackt Pair Colorizer
+   -  VS Code ES7 React/Redux/React-Native/JS snippets
+   -  ESLint
+   -  GitLens
+   -  JavaScript (ES6) code snippets
+   -  Prettier - Code formatter
+   -  SCSS formatter
 
       </details>
 
@@ -30,13 +30,13 @@
       <details>
       <summary>Dependencies</summary>
 
-      -  chai
-      -  node-sass
-      -  react-responsive
-      -  react-router-dom
-      -  react-slick
-      -  react-test-renderer
-      -  slick-carousel
+   -  chai
+   -  node-sass
+   -  react-responsive
+   -  react-router-dom
+   -  react-slick
+   -  react-test-renderer
+   -  slick-carousel
 
       </details>
 
@@ -111,4 +111,4 @@
 
 # Instructions to run online
 
--  Access
+-  Access https://original-io-test.firebaseapp.com/.
