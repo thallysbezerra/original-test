@@ -7,36 +7,33 @@
       <details>
       <summary>Important extensions</summary>
 
-   -  Auto Rename Tag
-   -  Auto-Open Markdown Preview
-   -  Brackt Pair Colorizer
-   -  VS Code ES7 React/Redux/React-Native/JS snippets
-   -  ESLint
-   -  GitLens
-   -  JavaScript (ES6) code snippets
-   -  Prettier - Code formatter
-   -  SCSS formatter
+      -  Auto Rename Tag
+      -  Auto-Open Markdown Preview
+      -  Brackt Pair Colorizer
+      -  VS Code ES7 React/Redux/React-Native/JS snippets
+      -  ESLint
+      -  GitLens
+      -  JavaScript (ES6) code snippets
+      -  Prettier - Code formatter
+      -  SCSS formatter
 
       </details>
 
 -  **CSS preprocessor**: SASS/SCSS
-
 -  **Hosting**: Firebase
-
 -  **Lib/Framework**: React.js using create-react-app
-
 -  **Package manager**: NPM/Yarn
 
       <details>
       <summary>Dependencies</summary>
 
-   -  chai
-   -  node-sass
-   -  react-responsive
-   -  react-router-dom
-   -  react-slick
-   -  react-test-renderer
-   -  slick-carousel
+      -  chai
+      -  node-sass
+      -  react-responsive
+      -  react-router-dom
+      -  react-slick
+      -  react-test-renderer
+      -  slick-carousel
 
       </details>
 
