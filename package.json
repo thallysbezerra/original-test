@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"chai": "^4.2.0",
-		"node-sass": "^4.12.0",
+		"node-sass": "^7.0.0",
 		"react-router-dom": "^5.0.1",
 		"react-test-renderer": "^16.9.0"
 	}
